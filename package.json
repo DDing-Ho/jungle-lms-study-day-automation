@@ -1,0 +1,31 @@
+﻿{
+  "name": "jungle-lms-login-automation",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "CLI automation for Jungle LMS login via Google SSO.",
+  "scripts": {
+    "login": "node ./src/cli.js login",
+    "verify": "node ./src/cli.js verify",
+    "login:fresh": "node ./src/cli.js login:fresh",
+    "bootstrap": "node ./src/cli.js bootstrap",
+    "bootstrap:fresh": "node ./src/cli.js bootstrap:fresh",
+    "inspect:checkin": "node ./src/cli.js inspect:checkin",
+    "start-study": "node ./src/cli.js start-study",
+    "end-study": "node ./src/cli.js end-study",
+    "study-day": "node ./src/cli.js study-day",
+    "study-day:run": "node ./src/cli.js study-day:run",
+    "study-day:status": "node ./src/cli.js study-day:status",
+    "study-day:stop": "node ./src/cli.js study-day:stop",
+    "study-day:foreground": "node ./src/cli.js study-day:foreground",
+    "study-day:tray": "node ./src/cli.js study-day:tray",
+    "study-day:tray:status": "node ./src/cli.js study-day:tray:status",
+    "study-day:tray:stop": "node ./src/cli.js study-day:tray:stop"
+  },
+  "engines": {
+    "node": ">=24.0.0"
+  },
+  "dependencies": {
+    "playwright": "^1.54.2"
+  }
+}
